@@ -1,0 +1,30 @@
+Ask the user how many books they ordered. If they ordered between 1 and 10, give them aa 10% discount. If they ordered between 11 and 20, give them a 20% discount. If they ordered more than 20, give them a 30% discount.
+
+#include "stdafx.h"
+#include <iostream>
+#include <string>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+	int numberOfBooks;
+	int discount;
+
+	cout << "Enter the number of books: " << endl;
+	cin >> numberOfBooks; 
+	
+	if (numberOfBooks < 11)
+		discount = 10; 
+
+	else if (numberOfBooks < 21)
+		discount = 20;
+
+	else if (numberOfBooks > 20)
+		discount = 30;
+
+
+
+
+	return 0;
+}

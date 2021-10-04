@@ -1,0 +1,22 @@
+ Let test1 = 97 and test2 = 90.102 and find the average, store it in a variable called AVERAGE, output it correctly to two decimal places.
+
+
+#include "stdafx.h"
+#include <iostream>
+#include <string>
+#include <math.h>
+#include <iomanip>
+#include <time.h>
+using namespace std;
+
+int main()
+{
+	int test1 = 97;
+		double test2 = 90.102;
+		double AVERAGE;
+
+		AVERAGE = (test1 + test2) / 2.0;
+		cout << setprecision(4) << AVERAGE << endl;
+
+    return 0;
+}

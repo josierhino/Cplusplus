@@ -1,0 +1,29 @@
+11. Create a function that takes in a start number and an end number. Have the function run a
+loop that outputs all the numbers from the start number to the end number.'
+
+
+
+void functions(int startnumber, int endnumber)
+{
+
+
+	cout << "Enter a start number" << endl;
+	cin >> startnumber;
+
+	cout << "Enter a end number" << endl;
+	cin >> endnumber;
+
+	for (int i = startnumber; i < endnumber; i++) {
+		cout << i << endl;
+	}
+
+
+}
+
+int main()
+{
+	functions(1,3);
+
+    return 0;
+}
+

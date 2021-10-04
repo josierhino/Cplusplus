@@ -1,0 +1,23 @@
+ASK FOR A NUMBER FROM 1 TO 100 AND OUTPUT WHETHER IT IS ODD OR EVEN
+
+#include "stdafx.h"
+#include <iostream>
+#include <string>
+#include <math.h>
+#include <time.h>
+using namespace std;
+
+int main()
+{
+	unsigned seed = time(NULL);
+	srand(seed); // rand() = 42 always on C++, so use this
+	
+		int x = rand() % 100 + 1;
+		if (x % 2 == 0)  
+			cout << x << " is even\n.";
+		else 
+			cout << x << " is odd\n.";
+
+	return 0;
+}
+

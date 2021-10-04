@@ -1,0 +1,29 @@
+// ConsoleApplication22.cpp : Defines the entry point for the console application.
+//
+#include "stdafx.h"
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int numberDouble(int number1) {
+	return number1 * 2;
+}
+
+int numberIncrease(int number2) {
+	return number2 + 1;
+}
+
+int main()
+{
+	int number1;
+	int number2;
+	cout << "Enter a number for the first value " << endl;
+	cin >> number1;
+	cout << "Enter a number for the second value" << endl;
+	cin >> number2;
+	cout << "Your new number for the first value is " << numberDouble(number1) << endl;
+	cout << "Your new number for the second value is " << numberIncrease(number2) << endl;
+	cout << "The total is " << numberDouble(number1) + numberIncrease(number2) << endl;
+	return 0;
+}
+

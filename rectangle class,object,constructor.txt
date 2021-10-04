@@ -1,0 +1,71 @@
+Rectangle Object:
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+double Rectangle::getPerimeter();
+
+class Rectangle 
+{
+private:
+	double length;
+	double width;
+public:
+	Rectangle()		//default constructor
+	{
+		width = 1;
+		length = 1;
+	}
+	Rectangle(double w, double l)	//constructor
+	{
+		width = w;
+		length = l;
+	}
+	void setWidth(double w)
+	{
+		width = w;
+	}
+	void setLength(double l)
+	{
+		length = l;
+	}
+	double getWidth()
+	{
+		return width;
+	}
+	double getLength()
+	{
+		return length;
+	}
+	double getArea()
+	{
+		return width*length;
+	}
+};
+
+double Rectangle::getPerimeter()
+{
+	return 2 * w + 2 * l;
+}
+
+Rectangle initSquare()
+{
+	Rectangle s;    // local object
+	int inputSize;
+	cout << "Enter the length of side: ";
+	cin >> inputSize;
+	s.setWidth(inputSize);
+	s.setLength(inputSize);
+	return s;
+}
+
+int main()
+{
+	Rectangle r2, r3(4,5); //creating the object 
+	r2.setWidth(5);
+	r2.setLength(2);
+	Rectangle r1 = initSquare(); //creating with the function and then passing
+
+    return 0;
+}

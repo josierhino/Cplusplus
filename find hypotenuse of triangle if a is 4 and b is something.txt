@@ -1,0 +1,23 @@
+
+FIND HYPOTENUSE OF TRIANGLE. (A^2 + B^2 = C^2) IF A IS 4 AND 3 IS B
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <string>
+#include <cmath>
+#include <iomanip>
+#include <time.h>
+using namespace std;
+
+int main()
+{
+	int A = 4;
+	int B = 3;
+	int C;
+
+	C = pow(A, 2) + pow(B, 2);
+	cout << sqrt(C) << endl;
+
+    return 0;
+}

@@ -1,0 +1,25 @@
+ASK USER FOR GRADE. IF IT GREATER THAN 90 IT IS A. IF IT BETWEEN 80 AND 90 IT IS A B. IF IT IS LESS THAN 80 IT IS A C
+
+#include "stdafx.h"
+#include <iostream>
+#include <string>
+#include <math.h>
+#include <time.h>
+using namespace std;
+
+int main()
+{
+	int grade;
+
+	cout << "What is your grade?" << endl;
+	cin >> grade;
+
+	if (grade >= 90)
+		cout << "A" << endl;
+	else if (grade >= 80 && grade < 90)
+		cout << "B" << endl;
+	else if (grade < 80)
+		cout << "C" << endl;
+
+	return 0;
+}

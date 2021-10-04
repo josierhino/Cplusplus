@@ -1,0 +1,59 @@
+FIND 3 RANDOM NUMBERS. SORT THEM FROM GREATEST TO LEAST.
+
+
+#include "stdafx.h"
+#include <iostream>
+#include <string>
+#include <math.h>
+#include <ctime>
+using namespace std;
+
+int main()
+{
+	unsigned seed = time(NULL);
+	srand(seed);
+
+	int x = rand();
+	int y = rand();
+	int z = rand();
+
+	int greatest, middle, least;
+
+	if (x > y)
+	{
+		greatest = x;
+		least = y;
+	}
+
+	else {
+		greatest = y;
+		least = x;
+	}
+
+	if (z > greatest) {
+
+		middle = greatest;
+		greatest = z;
+	}
+	else {
+		if (z > least) {
+			middle = z;
+		}
+		else {
+			middle = least;
+			least = z;
+		}
+	}
+
+	cout << "Number 1: " << x << endl;
+	cout << "Number 2: " << y << endl;
+	cout << "Number 3: " << z << endl;
+
+	cout << "Greatest: " << greatest << endl;
+	cout << "Middle: " << middle << endl;
+	cout << "Least: " << least << endl;
+
+
+
+	return 0;
+}

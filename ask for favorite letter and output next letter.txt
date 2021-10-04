@@ -1,0 +1,25 @@
+ASK USER FOR FAVORITE LETTER AND OUTPUT NEXT LETTER
+
+
+#include "stdafx.h"
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+#include <string>
+#include <ctime>
+using namespace std;
+
+int main()
+{
+	char letter;
+
+	cout << "Whats your favorite letter?" << endl;
+	cin >> letter;
+
+	letter = 1 + letter;
+	cout << static_cast<int>(letter) << endl;
+	cout << letter << endl;
+
+
+    return 0;
+}

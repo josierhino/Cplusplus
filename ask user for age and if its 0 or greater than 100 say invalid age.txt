@@ -1,0 +1,21 @@
+ASK USER FOR ITS AGE AND IF ITS 0 OR GREATER THAN 100 SAY "INVALID AGE"
+	
+#include "stdafx.h"
+#include <iostream>
+#include <string>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+	int age;
+	cout << "What is your age?" << endl;
+	cin >> age;
+
+	if (age > 0 && age < 100)
+		cout << "Valid age." << endl;
+	else
+		cout << "Invalid age." << endl;
+
+	return 0;
+}

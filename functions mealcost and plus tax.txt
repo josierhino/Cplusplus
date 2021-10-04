@@ -1,0 +1,45 @@
+FUNCTIONS || MEALCOST AND TOTAL COST PLUS TAX ||
+
+
+// ConsoleApplication20.cpp : Defines the entry point for the console application.
+
+
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <iomanip>
+#include <string>
+#include <cmath>
+using namespace std;
+void setMealCost(double &mealCost);
+double setTax();
+void totalCost(double mc, double t);
+
+int main()
+{ 
+	double mealCost, tax;
+	setMealCost(mealCost);
+	tax = setTax();
+	totalCost(mealCost, tax);
+		
+    return 0;
+}
+
+void setMealCost(double &mealCost) // & means pass in the real mealcost not the copy, assign it to real mealcost in main//
+{
+	cout << "What is the meal cost?" << endl;
+	cin >> mealCost;
+}
+double setTax()
+{
+	cout << "What is the tax?" << endl;
+	double t;
+	cin >> t;
+	return t;
+}
+
+void totalCost(double mc, double t)
+{
+	cout << "The total cost is: $" << mc + t*mc << endl;
+}

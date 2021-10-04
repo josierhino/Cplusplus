@@ -1,0 +1,40 @@
+MARKUP PERCENTAGE, WHOLESALECOST AND RETAIL PRICE. RETURN RETAIL PRICE
+function named calculateRetail RECEIVES WHOLESALECOST AND MARKUP PERCENTAGE
+
+#include "stdafx.h"
+#include <iomanip>
+#include <string>
+#include <iostream>
+#include <cmath>
+#include <fstream>
+using namespace std;
+
+ double calculateRetail(double markupPercentage, double wholesaleCost)
+{
+	 double retailPrice;
+
+	 cout << "What is the wholesalecost?" << endl;
+	 cin >> wholesaleCost;
+
+	 cout << "What is the markup percentage?" << endl;
+	 cin >> markupPercentage;
+
+	 retailPrice = wholesaleCost + wholesaleCost / 100 * markupPercentage;
+
+	
+	 cout << "Your retail price: $" << retailPrice << endl;
+	
+
+	 return retailPrice;
+}
+
+int main()
+{
+	double wholesaleCost;
+	double markupPercentage;
+
+	
+	calculateRetail(1,2);
+
+    return 0;
+}

@@ -1,0 +1,29 @@
+// ConsoleApplication20.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <iomanip>
+#include <string>
+#include <cmath>
+using namespace std;
+
+int main()
+{ 
+	// ask user for grades and display them //
+	const int SIZE = 10;
+	int grades[SIZE];
+
+	for (int i = 0; i < SIZE; i++)
+	{
+		cout << "Please fill in the grade." << endl;
+		cin >> grades[i];
+	}
+
+	int max = -1;
+	for (int i = 0; i < SIZE; i++)
+	{
+		if (grades[i] > max) max = grades[i];
+	}
+    return 0;
+}

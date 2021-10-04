@@ -1,0 +1,21 @@
+TELL THE USER'S AGE IN SECONDS
+
+#include "stdafx.h"
+#include <iostream>
+#include <string>
+#include <math.h>
+#include <time.h>
+using namespace std;
+
+int main()
+{
+	int age;
+	
+	cout << "How old are you?" << endl;
+	cin >> age;
+
+	age = age * 365 * 24 * 60 * 60;
+	cout << "You are " << age << " seconds year old!" << endl;
+
+	return 0;
+}

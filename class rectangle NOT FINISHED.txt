@@ -1,0 +1,19 @@
+class Rectangle
+{ 
+  private:
+    double l;
+    double w;
+  public:
+    Rectangle(double l, double w) {length = l; width = w;}
+    Rectangle() {length = 1; width = 1;}
+
+	void setLength(double l) {length = l;}
+	double getLength() {return length;}
+	void setWidth(double w) {width = w;}
+	double getWidth() {return width;}
+	double calcArea() {return length * width; }
+};
+
+int main()
+{
+	Rectangle r:

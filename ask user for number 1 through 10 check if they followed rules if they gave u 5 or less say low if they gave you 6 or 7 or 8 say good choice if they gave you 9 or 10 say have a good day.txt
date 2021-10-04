@@ -1,0 +1,29 @@
+Ask the user for a number between 1 and 10. First check if they followed the rules. If they gave you a number 5 or less , say "it's low"; if they gave you the number 6 or 7 or 8 say "Good choice"; if they gave you 9 or 10, say "Have a good day.
+
+
+#include "stdafx.h"
+#include <iostream>
+#include <string>
+#include <math.h>
+#include <time.h>
+using namespace std;
+
+int main()
+{
+	int number;
+
+	cout << "Pick a number 1-10" << endl;
+	cin >> number;
+	if (number > 10)
+		cout << "Try again. 1-10 Please" << endl;
+	else if (number == 0)
+		cout << "Try again. 1-10 Please" << endl;
+	else if (number <= 5)
+		cout << "It's low" << endl;
+	else if (number == 8 || number == 7 || number == 6)
+		cout << "Good choice!" << endl;
+	else if (number == 9 || number == 10)
+		cout << "Have a good day" << endl;
+
+	return 0;
+}

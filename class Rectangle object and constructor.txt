@@ -1,0 +1,38 @@
+class Rectangle
+
+// ConsoleApplication18.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+#include <string>
+using namespace std;
+
+class Rectangle
+{
+private:
+	double length, width;
+public:
+	Rectangle() { length = 1; width = 1; }
+	Rectangle(double l, double w) { length = 1; width = w; }
+	
+	void setLength(double l) { length = l; }
+	double getLength() { return length; }
+	void setWidth(double w) { width = w; }
+	double getWidth() { return width; }
+
+	double getArea() { return width * length; }
+
+};
+int main()
+{
+	Rectangle r; // create the object// 
+	r.setLength(10); // set the object's length to 10//
+	r.setWidth(12); // set the object's width to 12 //
+	cout << r.getArea() << endl; // cout to get the area, calling it because its a function // 
+
+    return 0;
+}
+

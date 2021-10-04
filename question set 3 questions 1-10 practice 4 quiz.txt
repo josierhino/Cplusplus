@@ -1,0 +1,263 @@
+1. // NUMBER ONE: 1. Create a while loop that counts even numbers from 2 to 10 //
+
+#include "stdafx.h"
+#include <string>
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+#include <math.h>
+#include <time.h>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+	int number =2;
+	
+	while (number <= 10) {
+		if (number % 2 == 0)
+		cout << number << endl;
+		number++;
+	}
+
+
+    return 0;
+}
+
+// NUMBER TWO 2. Create a for loop that counts by five (i.e. 0, 5, 10, ...) from 0 to 100 //
+#include "stdafx.h"
+#include <string>
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+#include <math.h>
+#include <time.h>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+
+	for (int i = 0; i < 100; i+=5){
+		cout << i << endl;
+	}
+    return 0;
+}
+
+// NUMBER THREE 3. Ask for a person's age and give them three tries to give you a correct age (between 0 and 100)//
+// ConsoleApplication7.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <string>
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+#include <math.h>
+#include <time.h>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+	int age;
+	int counter = 0;
+
+	cout << "What is your age?" << endl;	
+	cin >> age;
+
+	while (counter!=3){
+		cin >> age;
+		cin >> age;
+		if (100 >= age > 0) {
+			break;
+		}
+		else {
+			counter +=1;
+		}
+			
+	}
+	
+    return 0;
+}
+
+// NUMBER FOUR 4. Use a for loop to list Celsius and Fahrenheit temperatures. The "C" should be from -20 to 20 and the F should be shown correspondingly (F = (9/5)*C+32).// 
+int main()
+{
+	double C;
+	double F;
+
+	for (int i = -20; i < 21; i++) {
+		cout << "The celsius is:  " << i << endl;
+		cout << "The fahrenheit is " << (9.0 / 5)*i + 32 << endl;
+
+	}
+    return 0;
+}
+
+// NUMBER FIVE 5. The Fibonacci numbers are 1,1,2,3,5,8,13,21, etc. Use a for loop to list the first 20 Fibonacci numbers//
+// ConsoleApplication7.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <string>
+#include <iostream>
+#include <iomanip>
+#include <math.h>
+#include <time.h>
+#include <cmath>
+using namespace std;
+int Fib(int i)
+{
+	int value = 0;
+	if (i < 1) return 0;
+	if (i == 1) return 1;
+	return Fib(i - 1) + Fib(i - 2);
+}
+
+	int main()
+	{
+		int i = 0;
+		while (i <= 20)
+		{
+			cout << Fib(i) << endl;
+			i++;
+		}
+		return 0;
+	}
+   
+
+
+// NUMBER SIX 6. Create a triangle using 2 for loops and the "*".//
+// ConsoleApplication7.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <string>
+#include <iostream>
+#include <iomanip>
+#include <math.h>
+#include <time.h>
+#include <cmath>
+using namespace std;
+
+		int main()
+		{
+			int rows;
+
+			cout << "Enter number of rows: ";
+			cin >> rows;
+
+			for (int i = 1; i <= rows; ++i)
+			{
+				for (int j = 1; j <= i; ++j)
+				{
+					cout << "* ";
+				}
+				cout << "\n";
+			}
+			return 0;
+		}		
+	
+   
+
+
+
+   // NUMBER SEVEN 7. Check if a number is prime.//
+ #include "stdafx.h"
+ #include <iomanip>
+#include <math.h>
+#include <time.h>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+	int n, i;
+	bool isPrime = true;
+
+	cout << "Enter a number: ";
+	cin >> n;
+
+	for (i = 2; i <= n / 2; ++i)
+	{
+		if (n % i == 0)
+		{
+			isPrime = false;
+			break;
+		}
+	}
+	if (isPrime)
+		cout << "This is a prime number";
+	else
+		cout << "This is not a prime number";
+
+	return 0;
+
+
+}
+// NUMBER EIGHT 8. Output a list of numbers from 100 to 1 (using a for loop) to a file//
+#include <fstream>
+#include "stdafx.h"
+
+int main()
+{
+	std::ofstream file("num.txt", std::ofstream::out);
+
+	for (int i = 100; i > 0; --i)
+		file << i << std::endl;
+
+	file.close();
+
+	return 0;
+}
+// NUMBER NINE 9. Use a loop to output all the squares (i.e. 1,4, 9, 16, etc) to a file// 
+#include "stdafx.h"
+#include <cmath>
+#include <string>
+#include <iomanip>
+#include <string>
+#include <ctime>
+#include <fstream>
+using namespace std;
+
+int main()
+{
+	int number = 1;
+	fstream f("OUTPUT.txt", ofstream::out);
+
+	for (int i = 1; i < 15; ++i)
+		f << i * i << endl;
+	f.close();
+
+
+	return 0;
+}
+// NUMBER TEN 10. Take a number such as 47321 and output it backwards to get 12374// 
+
+#include "stdafx.h"
+#include <iostream>
+
+int main()
+{
+	int i = 12345;
+	int rev;
+
+	rev = 0;
+
+	printf("Before reverse: %d\n", i);
+
+	while (i > 0) {
+		int tmp;
+
+		rev *= 10;
+		tmp = i % 10;
+		rev += tmp;
+
+		i /= 10;
+	}
+
+	printf("After reverse: %d\n", rev);
+
+	return 0;
+}

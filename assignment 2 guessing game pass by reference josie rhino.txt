@@ -1,0 +1,42 @@
+//Josie Rhino
+//ConsoleApplication24.cpp
+//09/19/2018
+//* Description: Assignment 2 -- A guessing game using pass-by-reference and static local variable. 
+
+#include "stdafx.h"
+#include <cstdlib>
+#include <ctime>
+#include <cmath>
+#include <iostream>
+#include <iomanip>
+using namespace std;
+void guess(int &guess_value);
+
+void guess(int &guess_value)
+{
+	cin >> guess_value;
+}
+
+int main()
+{
+	const int correct_number = 9;
+	int guessed_number = 0;
+	int guess_attempts = 0;
+
+	while (guessed_number != correct_number)
+	{
+		cout << "Please guess a number 0-9" << endl;
+
+		guess(guessed_number);
+
+		if (guessed_number != correct_number)
+		{
+			cout << "Sorry, that was not correct, please try again." << endl;
+			guess_attempts++;
+		}
+	}
+
+	cout << "Congrats! You guessed the number correctly. It took you " << guess_attempts << " attempt(s)!" << endl;
+
+	return 0;
+}

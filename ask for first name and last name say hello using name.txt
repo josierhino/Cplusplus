@@ -1,0 +1,22 @@
+ASK FOR FIRST NAME AND LAST NAME. SAY HELLO USING THEIR FIRST NAME AND LAST NAME:
+
+#include "stdafx.h"
+#include <iostream>
+#include <string>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+	string firstName, lastName;
+
+	cout << "Enter your first name." << endl;
+	cin >> firstName;
+
+	cout << "Enter your last name." << endl;
+	cin >> lastName;
+
+	cout << "Hello, " << firstName << " " << lastName << endl;
+
+	return 0;
+}

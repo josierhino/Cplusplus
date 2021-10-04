@@ -1,0 +1,28 @@
+class Circle
+{
+private: // make all variables private 
+	double radius;
+public: // make the functions of the class public //
+
+	Circle() {radius = 1;} // the default constructor, the radius will by default be 1 /
+	Circle(double r) {radius = r;} // initializes the set
+
+	void setRadius(double r) {radius = r;} // mutator, SETS//
+	double getRadius() {return radius;} // accessor, GETS //
+	double calcArea(){return 3.14*pow(radius,2);} // calculates area and returns the area(3.14 r^2)
+	double calcCircumfe(){return 3.14*2*radius;} // calculates the circumference
+};
+
+int main()
+{
+	Circle c1, c2; // create the object(in this case OBJECTS)
+	c1.setRadius(5); // sets radius to 5// 
+	cout << c1.getRadius() << endl; // get radius by calling the function getRadius() for the object in a cout statement
+	c2.setRadius(30.2);
+	cout << c2.getRadius() << endl;
+
+
+
+return 0;
+
+}

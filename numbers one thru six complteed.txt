@@ -1,0 +1,134 @@
+1. // NUMBER ONE //
+
+#include "stdafx.h"
+#include <string>
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+#include <math.h>
+#include <time.h>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+	int number =2;
+	
+	while (number <= 10) {
+		if (number % 2 == 0)
+		cout << number << endl;
+		number++;
+	}
+
+
+    return 0;
+}
+
+// NUMBER TWO //
+#include "stdafx.h"
+#include <string>
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+#include <math.h>
+#include <time.h>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+
+	for (int i = 0; i < 100; i+=5){
+		cout << i << endl;
+	}
+    return 0;
+}
+
+// NUMBER THREE //
+// ConsoleApplication7.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <string>
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+#include <math.h>
+#include <time.h>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+	int age;
+	int counter = 0;
+
+	cout << "What is your age?" << endl;	
+	cin >> age;
+
+	while (counter!=3){
+		cin >> age;
+		cin >> age;
+		if (100 >= age > 0) {
+			break;
+		}
+		else {
+			counter +=1;
+		}
+			
+	}
+	
+    return 0;
+}
+
+// NUMBER FOUR // 
+int main()
+{
+	double C;
+	double F;
+
+	for (int i = -20; i < 21; i++) {
+		cout << "The celsius is:  " << i << endl;
+		cout << "The fahrenheit is " << (9.0 / 5)*i + 32 << endl;
+
+	}
+    return 0;
+}
+
+// NUMBER FIVE //
+// ConsoleApplication7.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <string>
+#include <iostream>
+#include <iomanip>
+#include <math.h>
+#include <time.h>
+#include <cmath>
+using namespace std;
+int Fib(int i)
+{
+	int value = 0;
+	if (i < 1) return 0;
+	if (i == 1) return 1;
+	return Fib(i - 1) + Fib(i - 2);
+}
+
+	int main()
+	{
+		int i = 0;
+		while (i <= 20)
+		{
+			cout << Fib(i) << endl;
+			i++;
+		}
+		return 0;
+	}
+   
+
+
+// NUMBER SIX //
+
+
+

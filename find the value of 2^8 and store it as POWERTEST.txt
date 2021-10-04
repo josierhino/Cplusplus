@@ -1,0 +1,19 @@
+3. Find the value of 2^8 and store it in a variable called POWERTEST.
+
+
+#include "stdafx.h"
+#include <iostream>
+#include <string>
+#include <math.h>
+#include <time.h>
+using namespace std;
+
+int main()
+{
+	int POWERTEST;
+
+	cout <<pow(2, 8);
+	cin >> POWERTEST;
+
+    return 0;
+}

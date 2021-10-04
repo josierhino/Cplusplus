@@ -1,0 +1,38 @@
+1. Write a program that asks user to enter an item's wholesale cost and its markup percentage. DIsplay the item's retail price then.
+* If an item's cost is 5$ its markup percentage is 100% then the item's retail price is 10$
+* If an item's wholesale cost is 5$ and its markup percentage is 50% then the item's retail price is $7.50
+
+2. write a function named celsius that accepts a Fahrenheit temperature as an argument and returns the termperature converted to Celsius. Demonstrate the function by calling it in a loop that displays a table of the Fahrenheit temperatures 0 through 20 and their Celsisu equivalents
+  C = 5/9(F-32)
+
+3. Write a function named fallingDistance that accepts an object's faling time (in seconds) as an argument. The function should return the distance, in meters, that the objecthas fallen during the time interval. Write a program that demonstrates the function by calling it in a loop that passes the values 1 through 10 as arguments and displays the return value
+ d = 1/2gt^2
+* d is distance in meters
+*g is 9.8
+* t is the time in seconds that the object has been falling
+
+4. Write a function named kineticEnergy that accepts an object's mass (in kilograms) and velocity(in meters per second) as arguments. The function should return the amount of kinetic energy that the object has. Demonstrate the function by calling it in a program that asks the user to enter values for mass and velocity.
+ KE = 1/2mv^2
+KE is the kinetic energy in joules
+m is the object's mass in kilograms
+v is the object's velocity in meters per second
+
+5. Write a program that determines which of a company's four divisions (Northeast, Southeast, Northwest, and Southwest) had the greatest sales for a quarter. It should include the following two  functions, which are called by main.
+* double getSales() is passed the name of a division. It asks the user for a division's quarterly sales figure, validates that the input is not less than 0, then returns it. It should be called once for each division
+* void findHighest() is passed the four sales totals. It determines which is the largest and prints the name of the high grossing division, along with its sales figure.
+
+6. Write a program that asks for the weight of a package and the distance it is to be shipped. This info should be passed to a calculateCharge function that computes and returns the shipping charge to be displayed. The main function should loop to handle multiple packages until a weight of 0 is entered.
+
+The Fast Freigh Shipping Company charges the following rates
+Weight of Package (in kilograms)                  Rate per 500 Miles Shipped
+-----------------------------------------------------------------------------
+2 kg or less                                          $3.10
+Over 2 kg but not more than 6 kg                      $4.20
+Over 6 kg but not more than 10 kg		      $5.30
+Over 10 kg					      $6.40
+
+
+8. Write a program that calculate the average of a group of test scores, where the lowest score in the group is dropped. It should use the following functions:
+*void getScore() shuold ask the user for a test score, store it in a reference parameter variable, and validate that it is not lower than 0 or higher than 100. This function should be called by main once for each of the five scores to be entered.
+*void calcAverage() should calculate and display the average of the four highest scores. This function should be called just once by main and should be passed the five scores.
+*int findLowest() should find and return the lowest of the five scores passed to it. It should be called by calcAverage, which uses the function to determine which one of the five scores to drop.

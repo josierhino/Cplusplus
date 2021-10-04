@@ -1,0 +1,23 @@
+COUNT FROM -20 TO 20 BY EVEN NUMBERS
+
+#include "stdafx.h"
+#include <iomanip>
+#include <iostream>	
+#include <string>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+	int i = -20;
+	while (i < 21)
+
+		while (-21 < i && i < 21)
+		{
+			if (i % 2 == 0) {
+				cout << i << endl;
+			}
+			i++;
+		}
+    return 0;
+}

@@ -1,0 +1,23 @@
+ASK USER FOR CELSIUS USE FORMULA TO CONVERT CELSIUS TO FARENHEIT USE :farenheit = (9/5 *celsius+32)
+
+
+#include "stdafx.h"
+#include <iostream>
+#include <string>
+#include <math.h>
+#include <time.h>
+using namespace std;
+
+int main()
+{
+	double CELSIUS;
+
+	cout << "What is the temperature in Celsius?" << endl;
+	cin >> CELSIUS;
+
+	double FARENHEIT = (9.0 / 5.0 * CELSIUS + 32);
+	cout << "Your temperature in farenheit is " << FARENHEIT << " " << endl;
+
+
+    return 0;
+}
